@@ -1,0 +1,13 @@
+-# Meta
+%meta{:charset => "utf-8"}
+%meta{:name => "language", :content => I18n.locale}
+
+%title RailsBasic
+-# Layout
+%meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0"}
+
+-# Compatibility
+%meta{'http-equiv' => "X-UA-Compatible", :content => "IE=edge,chrome=1"}
+
+= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+= csrf_meta_tags

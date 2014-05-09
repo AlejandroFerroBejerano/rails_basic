@@ -1,0 +1,12 @@
+!!!
+%html(lang="en")
+  %head
+    = render 'layouts/head'
+  %body
+    = render 'layouts/navbar'
+    = render 'layouts/content'
+    -#= render 'layouts/footer'
+
+    -# Javascripts
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = yield(:dinamic_javascripts)

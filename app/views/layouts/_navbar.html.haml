@@ -1,0 +1,20 @@
+.navbar.navbar-static-top.navbar-default.navbar-inverse{ role: "navigation" }
+  .container-fluid
+    .navbar-header
+      %button.navbar-toggle{ type: "button", "data-toggle" => "collapse", "data-target" => "#nav-collapse-header" }
+        %a.btn.btn-navbar(data-target=".nav-collapse" data-toggle="collapse")
+          %span.icon-bar
+          %span.icon-bar
+          %span.icon-bar
+      = link_to "Brand", "#", class: "navbar-brand"
+
+    #nav-collapse-header.collapse.navbar-collapse
+      %ul.nav.navbar-nav.navbar-right
+        - if user_signed_in?
+        - else
+          %li.thin-menu
+            = link_to user_session_path, :class => 'btn-sign' do
+              %span.btn.btn-success= t('devise.sign_in')
+          %li.thin-menu
+            = link_to new_user_registration_path, :class => 'btn-sign' do
+              %span.btn.btn-primary= t('devise.sign_up')
