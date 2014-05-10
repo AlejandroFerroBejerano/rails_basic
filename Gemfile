@@ -48,7 +48,8 @@ gem 'nested_form', '~> 0.3.2'
 gem 'rmagick', '~> 2.13.2', :require => 'RMagick'
 
 # Foreman
-# gem 'foreman', '~> 0.67.0'
+#gem 'foreman', '~> 0.67.0'
+gem 'foreman', git: 'https://github.com/antob/foreman'
 
 gem 'bootstrap-sass'            , '~> 3.1.1.1'
 gem 'compass-rails'             , '~> 1.1.7'

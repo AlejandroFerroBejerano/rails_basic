@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/antob/foreman
+  revision: 50c78444207b7531fd0bec69dd371d0d29e21b05
+  specs:
+    foreman (0.67.0)
+      dotenv (~> 0.7.0)
+      thor (~> 0.19.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -81,6 +89,7 @@ GEM
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
     diff-lcs (1.2.5)
+    dotenv (0.7.0)
     erb2haml (0.1.5)
       html2haml
     erubis (2.7.0)
@@ -235,6 +244,7 @@ DEPENDENCIES
   devise (~> 3.2.4)
   erb2haml
   factory_girl_rails
+  foreman!
   haml (~> 4.0.5)
   hirb
   jbuilder (~> 2.0)
