@@ -1,0 +1,23 @@
+%h2 Admins
+
+%table.admins.table.table-bordered.table-hover.table-striped
+  %tr
+    %th Name
+    %th Email
+    %th Department
+    %th
+    %th
+    %th
+
+  - @admin_admins.each do |admin|
+    %tr{:class => "admin-#{admin.to_param}"}
+      %td= link_to admin.identifier, [:admin, admin]
+      %td= admin.email
+      %td= admin.department
+      %td= link_to 'Show', [:admin, admin]
+      %td= link_to 'Edit', edit_admin_admin_path(admin)
+      %td= link_to 'Destroy', [:admin, admin], :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Admin', new_admin_admin_path, :class => 'btn'

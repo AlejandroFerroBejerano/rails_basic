@@ -1,0 +1,13 @@
+#content
+  .container-fluid
+    = draw_alert
+    = draw_notice
+
+    .row-fluid
+      .span2
+        .well.sidebar-nav
+          %ul.nav.nav-list
+            = yield(:sidebar_nav)
+
+      .span10
+        = yield

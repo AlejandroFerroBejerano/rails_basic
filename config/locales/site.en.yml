@@ -1,0 +1,7 @@
+en:
+  site:
+    name: 'Rails Basic'
+    large_name: 'Rails Basic'
+    description: 'A basic rails app'
+    keywords: 'ruby, rails'
+    author: 'Dalarenal'

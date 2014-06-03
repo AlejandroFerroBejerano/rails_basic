@@ -1,0 +1,12 @@
+!!! 5
+%html(lang="en")
+  %head
+    = render 'layouts/admin/head'
+
+  %body
+    = render 'layouts/admin/navbar'
+    = render 'layouts/admin/content'
+    = render 'layouts/admin/footer'
+
+    -# Javascripts
+    = javascript_include_tag "admin/application"

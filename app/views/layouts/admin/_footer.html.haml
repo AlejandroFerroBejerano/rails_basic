@@ -1,0 +1,9 @@
+%footer
+  .row-fluid
+    .content.offset2.span8
+      .site-name
+        = draw_page_title_for 'admin'
+      %ul.environment
+        %li= Rails.env
+        %li= ENV['REVISION']
+        %li= link_to t('.back_to_bizneo'), root_path

@@ -1,0 +1,16 @@
+#navbar.navbar.navbar-inverse.navbar-fixed-top
+  .navbar-inner
+    .container-fluid
+      %a.btn.btn-navbar(data-target=".nav-collapse" data-toggle="collapse")
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+
+      .container-fluid
+        = link_to image_tag("logo.png", width: "75", alt: draw_page_title_for('admin')), admin_root_path, {:class => 'brand'}
+        .nav-collapse.collapse
+          %ul.nav= render 'layouts/admin/nav'
+          %ul.nav.pull-right
+            - if admin_signed_in?
+              = render 'layouts/admin/manage_dropdown'
+              = render 'layouts/admin/user_dropdown'

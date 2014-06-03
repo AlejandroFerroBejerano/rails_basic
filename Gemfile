@@ -31,6 +31,7 @@ gem 'spring',        group: :development
 # Assets
 gem 'haml', '~> 4.0.5'
 gem 'jquery-rails', '~> 3.1.0'
+gem 'jquery-ui-rails', '~> 4.2.1'
 
 # Authentication
 gem 'devise', '~> 3.2.4'
@@ -47,6 +48,9 @@ gem 'nested_form', '~> 0.3.2'
 # ImageMagick/GraphicsMagick processing
 gem 'rmagick', '~> 2.13.2', :require => 'RMagick'
 
+# Will Paginate
+gem 'will_paginate', '~> 3.0.5'
+
 # Foreman
 #gem 'foreman', '~> 0.67.0'
 gem 'foreman', git: 'https://github.com/antob/foreman'
@@ -54,6 +58,7 @@ gem 'foreman', git: 'https://github.com/antob/foreman'
 gem 'bootstrap-sass'            , '~> 3.1.1.1'
 gem 'compass-rails'             , '~> 1.1.7'
 gem 'sass-rails'                , '~> 4.0.3'
+gem 'chosen-rails'              , '~> 1.1.0'
 
 group :assets do
   gem 'coffee-rails'              , '~> 4.0.1'

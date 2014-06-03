@@ -1,0 +1,8 @@
+%li.dropdown
+  %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+    = t('shared.actions.manage')
+    %b.caret
+  %ul.dropdown-menu
+    %li.nav-header= User.model_name.human.pluralize
+    %li= link_to Admin.model_name.human.pluralize, admin_admins_path
+    %li.divider
